@@ -118,6 +118,11 @@
 	font-size: var(--normal-font-size);
 	font-weight: 500;
 }
+.scroll-down svg {
+	position: relative;
+	margin-left: 5px;
+	top: 2px;
+}
 
 .scroll-down i {
 	position: relative;

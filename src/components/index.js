@@ -8,3 +8,4 @@ export { default as Portfolio } from './portfolio/Portfolio';
 export { default as Services } from './services/Services';
 export { default as Skills } from './skills/Skills';
 export { default as Nav } from './nav/Nav';
+// export { default as SectionTitle } from './sectionTitle/SectionTitle';
