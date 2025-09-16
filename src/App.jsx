@@ -6,7 +6,7 @@ import {
 	Clients,
 	Portfolio,
 	Services,
-	Skills,
+	SkillsInfo,
 	Contacts,
 } from './components/index';
 
@@ -17,6 +17,7 @@ function App() {
 			<main>
 				<Home />
 				<About />
+				<SkillsInfo />
 			</main>
 			<Footer />
 		</>
