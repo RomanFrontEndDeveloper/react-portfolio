@@ -1,10 +1,10 @@
-import { services } from '../../data/services';
+import { skills } from '../../data/skills';
 
 const Skills = () => (
 	<div className='education'>
 		<h4 className='label'>Skills</h4>
 		<ul className='bars'>
-			{services.map((item, index) => (
+			{skills.map((item, index) => (
 				<li className='bar' key={index}>
 					<div className='info'>
 						<span>{item.skill}</span>
