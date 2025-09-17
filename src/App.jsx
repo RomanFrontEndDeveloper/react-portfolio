@@ -8,6 +8,7 @@ import {
 	Services,
 	SkillsInfo,
 	Contacts,
+	GetInTouch,
 } from './components/index';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
 				<About />
 				<SkillsInfo />
 				<Services />
+				<Portfolio />
+				<GetInTouch />
 			</main>
 			<Footer />
 		</>

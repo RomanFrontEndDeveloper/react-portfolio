@@ -17,12 +17,12 @@ import aboutImg from './about-img.png';
 // import menuBtn from './menu-btn.jpg';
 // import movies from './movies.jpg';
 // import notes from './notes.jpg';
-// import portfolio1 from './portfolio-1.jpg';
-// import portfolio2 from './portfolio-2.jpg';
-// import portfolio3 from './portfolio-3.jpg';
-// import portfolio4 from './portfolio-4.jpg';
-// import portfolio5 from './portfolio-5.jpg';
-// import portfolio6 from './portfolio-6.jpg';
+import portfolio1 from './portfolio-1.jpg';
+import portfolio2 from './portfolio-2.jpg';
+import portfolio3 from './portfolio-3.jpg';
+import portfolio4 from './portfolio-4.jpg';
+import portfolio5 from './portfolio-5.jpg';
+import portfolio6 from './portfolio-6.jpg';
 // import portfolio from './portfolio.jpg';
 // import recipes from './recipes.jpg';
 // import shape from './shape.jpg';
@@ -49,13 +49,13 @@ export {
 	// 	mainImg2,
 	// 	menuBtn,
 	// 	movies,
-	// 	notes,
-	// 	portfolio1,
-	// 	portfolio2,
-	// 	portfolio3,
-	// 	portfolio4,
-	// 	portfolio5,
-	// 	portfolio6,
+	// notes,
+	portfolio1,
+	portfolio2,
+	portfolio3,
+	portfolio4,
+	portfolio5,
+	portfolio6,
 	// 	portfolio,
 	// 	recipes,
 	// 	shape,

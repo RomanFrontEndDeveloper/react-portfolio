@@ -1,0 +1,55 @@
+.get-in-touch {
+	padding: 60px 20px;
+}
+
+.get-in-touch .contact-card {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	width: 90%;
+	padding: 50px;
+	border-radius: 10px;
+	column-gap: 50px;
+	background: var(--bg-transparent-color);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .title {
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.contact-card h4 {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.contact-card h3 {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.contact-card h2 {
+	font-size: 72px;
+	font-weight: 700;
+	background: linear-gradient(to top, transparent 0%, var(--first-color) 30%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 0.9;
+}
+
+.get-in-touch-link {
+	margin-bottom: 85px;
+	margin-top: 40px;
+}
+@media (max-width: 768px) {
+	.contact-card h2 {
+		font-size: 42px;
+	}
+
+	.get-in-touch .contact-card {
+		width: 80%;
+		padding: 30px 0 0;
+	}
+}
