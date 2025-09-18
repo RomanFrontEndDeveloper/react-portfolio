@@ -3,12 +3,13 @@ import {
 	Footer,
 	Home,
 	About,
-	Clients,
+	//Clients,
 	Portfolio,
 	Services,
 	SkillsInfo,
-	Contacts,
+	//Contacts,
 	GetInTouch,
+	OurClients,
 } from './components/index';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 				<Services />
 				<Portfolio />
 				<GetInTouch />
+				<OurClients />
 			</main>
 			<Footer />
 		</>

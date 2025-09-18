@@ -2,13 +2,10 @@ import mainImg from './main-img.png';
 import aboutImg from './about-img.png';
 // import burgerWhite from './burger-white.svg';
 // import burger from './burger.svg';
-// import client1 from './client1.jpg';
-// import client2 from './client2.jpg';
-// import client3 from './client3.jpg';
-// import client4 from './client4.jpg';
-// import client5 from './client5.jpg';
-// import client6 from './client6.jpg';
-// import client7 from './client7.jpg';
+import client1 from './client1.jpg';
+import client2 from './client2.jpg';
+import client3 from './client3.jpg';
+import client4 from './client4.jpg';
 // import closeBtn from './clole-btn.jpg';
 // import closeWhite from './clole-white.jpg';
 // import close from './clole.jpg';
@@ -35,13 +32,10 @@ export {
 	aboutImg,
 	// 	burgerWhite,
 	// 	burger,
-	// 	client1,
-	// 	client2,
-	// 	client3,
-	// 	client4,
-	// 	client5,
-	// 	client6,
-	// 	client7,
+	client1,
+	client2,
+	client3,
+	client4,
 	// 	closeBtn,
 	// 	closeWhite,
 	// 	close,
