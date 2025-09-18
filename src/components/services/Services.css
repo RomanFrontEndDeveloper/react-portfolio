@@ -162,3 +162,11 @@
 	align-items: center;
 	gap: 10px;
 }
+
+.servise-modal-body li svg {
+	display: block;
+	color: var(--second-color);
+	width: 60px;
+	font-size: 20px;
+	left: 0;
+}
