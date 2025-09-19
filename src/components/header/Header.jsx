@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Nav from '../nav/Nav';
 import { FaXing } from 'react-icons/fa';
@@ -7,6 +7,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isSticky, setIsSticky] = useState(false);
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
@@ -16,8 +17,17 @@ const Header = () => {
 		setIsMenuOpen(false);
 	};
 
+	const handleScroll = () => {
+		setIsSticky(window.scrollY > 0);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
-		<header className='header'>
+		<header className={isSticky ? 'header sticky' : 'header'}>
 			<div className='container'>
 				<div className='header-wrapper'>
 					<a href='' className='logo'>

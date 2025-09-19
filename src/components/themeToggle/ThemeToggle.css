@@ -1,0 +1,36 @@
+.them-btn {
+	position: fixed;
+	right: 20px;
+	bottom: 80px;
+	width: 45px;
+	height: 45px;
+	color: var(--first-color);
+	border-radius: 3px;
+	background: var(--second-color);
+	backdrop-filter: blur(20px);
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+	font-size: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	z-index: 11;
+	box-shadow: var(--box-shadow);
+	transition: 0.3 line-height;
+	-webkit-transition: 0.3 line-height;
+	-moz-transition: 0.3 line-height;
+	-ms-transition: 0.3 line-height;
+	-o-transition: 0.3 line-height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.them-btn .fa-sun {
+	display: none;
+}
+
+.them-btn .fa-moon {
+	color: var(--modal-bg-color);
+}

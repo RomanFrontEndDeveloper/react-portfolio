@@ -9,6 +9,8 @@ import {
 	GetInTouch,
 	OurClients,
 	Contacts,
+	ScrollToTop,
+	ThemeToggle,
 } from './components/index';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 				<GetInTouch />
 				<OurClients />
 				<Contacts />
+				<ScrollToTop />
+				<ThemeToggle />
 			</main>
 			<Footer />
 		</>

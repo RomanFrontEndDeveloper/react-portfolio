@@ -71,6 +71,13 @@
 	}
 }
 
+@media (max-width: 991px) {
+	.media-icons {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 .home-info-link {
 	width: 188px;
 	gap: 4px;
