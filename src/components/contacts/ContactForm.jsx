@@ -14,7 +14,7 @@ const ContactForm = () => {
 				whileInView='visible'
 				viewport={{ once: false, amount: 0.5 }}
 			>
-				<input type='text' placeholder='Name' type='text' />
+				<input type='text' placeholder='Name' />
 			</motion.div>
 			<motion.div
 				className='second-row'
@@ -24,8 +24,8 @@ const ContactForm = () => {
 				whileInView='visible'
 				viewport={{ once: false, amount: 0.5 }}
 			>
-				<input type='text' placeholder='Email' type='email' />
-				<input type='text' placeholder='Subject' type='text' />
+				<input type='email' placeholder='Email' />
+				<input type='text' placeholder='Subject' />
 			</motion.div>
 			<motion.div
 				className='third-row'
