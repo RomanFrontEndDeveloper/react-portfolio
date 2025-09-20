@@ -3,6 +3,9 @@ import './About.css';
 import { aboutImg } from '../../assets/images';
 import { FaDownload } from 'react-icons/fa';
 import SectionTitle from '../sectionTitle/SectionTitle';
+import { motion } from 'motion/react';
+import { slideInVariants } from '../../utils/animation';
+import { profList } from '../../data/profList';
 
 const About = () => {
 	return (
@@ -10,44 +13,101 @@ const About = () => {
 			<div className='container flex-center'>
 				<SectionTitle title='About me' subtitle='About me' />
 				<div className='about-wrapper'>
-					<div className='about-img'>
+					<motion.div
+						variants={slideInVariants('left', 0.9, 100, true)}
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: false, amount: 0.5 }}
+					>
 						<img src={aboutImg} alt='aboutImg' />
-					</div>
+					</motion.div>
 					<div className='about-info'>
 						<div className='description'>
-							<h3>I'm Roman</h3>
-							<h4>
+							<motion.h3
+								custom={0}
+								variants={slideInVariants(
+									'right',
+									0.5,
+									50,
+									true
+								)}
+								initial='hidden'
+								whileInView='visible'
+								viewport={{ once: false, amount: 0.5 }}
+							>
+								I'm Roman
+							</motion.h3>
+							<motion.h4
+								custom={0}
+								variants={slideInVariants(
+									'left',
+									0.5,
+									100,
+									true
+								)}
+								initial='hidden'
+								whileInView='visible'
+								viewport={{ once: false, amount: 0.5 }}
+							>
 								A Lead <span> Front-End Developer </span>
 								<span id='dark-span'> based in </span>
 								<span> Ukraine </span>
-							</h4>
-							<p>
+							</motion.h4>
+							<motion.p
+								custom={0}
+								variants={slideInVariants(
+									'right',
+									0.5,
+									100,
+									true
+								)}
+								initial='hidden'
+								whileInView='visible'
+								viewport={{ once: false, amount: 0.5 }}
+							>
 								I design and develop services for customers
 								specializing in creating stylish, modern
 								websites, web services, and online stores. My
 								passion is to design digital user experiences
 								through meaningful interactions. Check out my
 								Portfolio.
-							</p>
+							</motion.p>
 						</div>
 						<ul className='proffesional-list'>
-							<li className='list-item'>
-								<span className='number'>2+</span>
-								<span className='text'>Years of experiens</span>
-							</li>
-							<li className='list-item'>
-								<span className='number'>100+</span>
-								<span className='text'>Happy Customers</span>
-							</li>
-							<li className='list-item'>
-								<span className='number'>5+</span>
-								<span className='text'>Success Progect</span>
-							</li>
+							{profList.map((item, index) => (
+								<motion.li
+									className='list-item'
+									key={item.id}
+									custom={index}
+									variants={slideInVariants(
+										'right',
+										0.5,
+										50,
+										true
+									)}
+									initial='hidden'
+									whileInView='visible'
+									viewport={{ once: false, amount: 0.5 }}
+								>
+									<span className='number'>
+										{item.number}
+									</span>
+									<span className='text'>{item.text}</span>
+								</motion.li>
+							))}
 						</ul>
-						<a href='' className='inner-info-link'>
+						<motion.a
+							href=''
+							className='inner-info-link'
+							custom={3}
+							variants={slideInVariants('bottom', 0.7, 70, false)}
+							initial='hidden'
+							whileInView='visible'
+							viewport={{ once: false, amount: 0.5 }}
+						>
 							Download
 							<FaDownload />
-						</a>
+						</motion.a>
 					</div>
 				</div>
 			</div>

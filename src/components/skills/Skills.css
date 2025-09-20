@@ -27,7 +27,8 @@
 	margin-bottom: 20px;
 }
 
-.education {
+.education,
+.skills-info > div {
 	min-width: 290px;
 	width: 40%;
 }
@@ -133,10 +134,10 @@
 	-o-border-radius: 2px;
 }
 
-.bar .html::before {
+.line.html::before {
 	width: 65%;
 }
-.bar .css::before {
+.line.css::before {
 	width: 45%;
 }
 .bar .javascript::before {

@@ -10,7 +10,7 @@ const Skills = () => (
 						<span>{item.skill}</span>
 						<span>{item.level}</span>
 					</div>
-					<div className='line html'></div>
+					<div className={`line ${item.typeS}`}></div>
 				</li>
 			))}
 		</ul>

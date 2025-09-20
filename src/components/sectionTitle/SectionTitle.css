@@ -14,11 +14,7 @@
 	position: relative;
 	font-size: 25px;
 	font-weight: 700;
-	transform: translateY(-55px);
-	-webkit-transform: translateY(-55px);
-	-moz-transform: translateY(-55px);
-	-ms-transform: translateY(-55px);
-	-o-transform: translateY(-55px);
+	top: -55px;
 }
 
 .inner-second-title::before {
