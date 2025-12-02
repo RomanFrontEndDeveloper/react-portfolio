@@ -2,4 +2,6 @@ Vite Progect,
 React Icons,
 React-scroll,
 Swiper,
-Motion - Bibliothek.
+Motion - Bibliothek,
+props, useState,
+
