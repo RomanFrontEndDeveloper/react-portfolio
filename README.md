@@ -4,5 +4,6 @@ React-scroll,
 React-remove-scroll,
 Swiper,
 Motion - Bibliothek,
-props, useState,
+props, useState, useEffect,
+
 
