@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import ContactFormR from './ContactFormR';
 import { motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
@@ -16,7 +17,10 @@ const ContactRight = () => {
 				I'm always open to discussing product
 				<span>design work or partnerships.</span>
 			</motion.p>
-			<ContactForm />
+			<div className='forms'>
+				<ContactFormR />
+				<ContactForm />
+			</div>
 		</div>
 	);
 };
