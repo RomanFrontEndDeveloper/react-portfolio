@@ -5,11 +5,10 @@ import client2 from './client2.jpg';
 import client3 from './client3.png';
 import client4 from './client4.jpg';
 import portfolio1 from './portfolio-1.png';
-import portfolio2 from './portfolio-2.jpg';
-import portfolio3 from './portfolio-3.jpg';
-import portfolio4 from './portfolio-4.jpg';
-import portfolio5 from './portfolio-5.jpg';
-import portfolio6 from './portfolio-6.jpg';
+import portfolio2 from './portfolio-2.png';
+import portfolio3 from './portfolio-3.png';
+import portfolio4 from './portfolio-4.png';
+import portfolio5 from './portfolio-5.png';
 
 export {
 	mainImg,
@@ -23,5 +22,4 @@ export {
 	portfolio3,
 	portfolio4,
 	portfolio5,
-	portfolio6,
 };
