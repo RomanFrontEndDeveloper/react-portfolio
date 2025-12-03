@@ -25,7 +25,7 @@ const icons = [
 	},
 	{
 		id: 2,
-		href: 'https://www.instagram.com/romario_traveler_sport/?igsh=MWhmMmV0YndheTZ4Yg%3D%3D&utm_source=qr#',
+		href: 'https://www.instagram.com/romario_sport234?igsh=MWhmMmV0YndheTZ4Yg%3D%3D&utm_source=qr',
 		icon: <FaInstagram />,
 	},
 	{
@@ -35,7 +35,7 @@ const icons = [
 	},
 	{
 		id: 4,
-		href: 'https://www.tiktok.com/@travelerromario234?_t=ZM-8zQAnaSeJUr&_r=1',
+		href: 'https://www.tiktok.com/@roman_trend_234?_r=1&_t=ZM-91snYMPpl0N',
 		icon: <FaTiktok />,
 	},
 	{
@@ -96,7 +96,7 @@ const Home = () => {
 						expertise in web design and development.
 					</motion.p>
 					<motion.a
-						href=''
+						href='#contact'
 						className='home-info-link inner-info-link'
 						custom={4}
 						variants={slideInVariants('left', 0.6, 160, true)}

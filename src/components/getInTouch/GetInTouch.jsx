@@ -21,7 +21,7 @@ const GetInTouch = () => {
 						<h2>NEXT PROJECT</h2>
 					</motion.div>
 					<motion.a
-						href='mailto:your-email@example.com'
+						href='#contact'
 						className='get-in-touch-link inner-info-link'
 						variants={slideInVariants('right', 0.6, 90, false)}
 						initial='hidden'

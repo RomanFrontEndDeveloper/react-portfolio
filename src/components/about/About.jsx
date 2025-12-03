@@ -96,7 +96,7 @@ const About = () => {
 								</motion.li>
 							))}
 						</ul>
-						<motion.a
+						{/* <motion.a
 							href=''
 							className='inner-info-link'
 							custom={3}
@@ -107,7 +107,7 @@ const About = () => {
 						>
 							Download
 							<FaDownload />
-						</motion.a>
+						</motion.a> */}
 					</div>
 				</div>
 			</div>
