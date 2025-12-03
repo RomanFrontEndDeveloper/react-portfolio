@@ -40,7 +40,7 @@ export default function ContactFormR() {
 			>
 				<input
 					type='text'
-					placeholder='Your Name'
+					placeholder='Your phone numb Telegram'
 					value={name}
 					onChange={(e) => setName(e.target.value)}
 					required
@@ -66,7 +66,7 @@ export default function ContactFormR() {
 
 			{/* BUTTON */}
 			<motion.button
-				className='contact-btn inner-info-link'
+				className='contact-btn topA inner-info-link'
 				type='submit'
 				custom={3}
 				variants={slideInVariants('top', 0.6, 150, true)}

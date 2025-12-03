@@ -83,7 +83,7 @@ const ContactForm = () => {
 
 			{/* BUTTON */}
 			<motion.button
-				className='contact-btn inner-info-link'
+				className='contact-btn topA inner-info-link'
 				type='submit'
 				custom={4}
 				variants={slideInVariants('top', 0.6, 150, true)}
