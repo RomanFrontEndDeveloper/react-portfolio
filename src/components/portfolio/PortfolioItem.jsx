@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PortfolioModal from './PortfolioModal';
 import { motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
@@ -13,6 +13,21 @@ const PortfolioItem = ({ item, index }) => {
 	const closeModal = () => {
 		setIsModalOpen(false);
 	};
+
+	useEffect(() => {
+		if (isModalOpen) {
+			document.body.style.overflow = 'hidden';
+			document.documentElement.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+			document.documentElement.style.overflow = '';
+		}
+
+		return () => {
+			document.body.style.overflow = '';
+			document.documentElement.style.overflow = '';
+		};
+	}, [isModalOpen]);
 
 	return (
 		<motion.div
@@ -31,7 +46,8 @@ const PortfolioItem = ({ item, index }) => {
 				</div>
 				<img src={item.imgSrc} alt={item.title} />
 			</div>
-			{openModal && (
+
+			{isModalOpen && (
 				<PortfolioModal
 					item={item}
 					isModalOpen={isModalOpen}

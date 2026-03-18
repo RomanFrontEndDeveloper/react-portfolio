@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ServiceModal from './ServiceModal';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const ServiceItem = ({ services }) => {
-	const [activeIndex, setactiveIndex] = useState(null);
+	const [activeIndex, setActiveIndex] = useState(null);
 
 	const openModal = (index) => {
-		setactiveIndex(index);
+		setActiveIndex(index);
 	};
 
 	const closeModal = () => {
-		setactiveIndex(null);
+		setActiveIndex(null);
 	};
+
+	useEffect(() => {
+		if (activeIndex !== null) {
+			document.body.style.overflow = 'hidden';
+			document.documentElement.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+			document.documentElement.style.overflow = '';
+		}
+
+		return () => {
+			document.body.style.overflow = '';
+			document.documentElement.style.overflow = '';
+		};
+	}, [activeIndex]);
 
 	return (
 		<>
@@ -30,6 +45,7 @@ const ServiceItem = ({ services }) => {
 					<div className='service-card'>
 						<item.icon className='services-icon' />
 						<h3>{item.title}</h3>
+
 						<div
 							className='learn-more-btn'
 							onClick={() => openModal(index)}
@@ -38,6 +54,7 @@ const ServiceItem = ({ services }) => {
 							<FaLongArrowAltRight className='learn-more-icon' />
 						</div>
 					</div>
+
 					<ServiceModal
 						item={item}
 						closeModal={closeModal}
