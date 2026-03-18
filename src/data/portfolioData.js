@@ -5,51 +5,49 @@ import {
 	portfolio4,
 	portfolio5,
 } from '../assets/images';
-
 export const portfolioData = [
 	{
-		id: 1,
-		title: 'Travel Agency Website',
-		imgSrc: portfolio1,
-		category:
-			'HTML5, CSS3, JavaScript, jQuery, mobil adaptive, AOS, slider SLICK',
-		description: `https://romanfrontenddeveloper.github.io/trevland/`,
-		github1: 'https://github.com/RomanFrontEndDeveloper/trevland',
-	},
-	{
 		id: 2,
-		title: 'Portfolio Website Layout',
+		title: 'Product Catalog App (React + TypeScript)',
 		imgSrc: portfolio2,
-		category:
-			'HTML5, CSS3, JavaScript, SwiperAPI Integration, mobil adaptive, AOS, ScrollReveal',
-		description: `https://romanfrontenddeveloper.github.io/website-portfolio/`,
-		github1: 'https://github.com/RomanFrontEndDeveloper/website-portfolio',
+		category: 'React • TypeScript • REST API • Pagination • Responsive UI',
+		description: `https://aqvex-catalog-cxrrvbbha-romantrends-projects.vercel.app/`,
+		github1: 'https://github.com/RomanFrontEndDeveloper/aqvex-catalog',
 	},
-	{
-		id: 3,
-		title: 'Portfolio on React.JS',
-		imgSrc: portfolio3,
-		category:
-			'Vite Progect, React Icons, React-scroll, React-remove-scroll, Swiper, Motion - Bibliothek, props, useState, useEffect,',
-		description: `https://portfolio-react-roman-okhremov.netlify.app/`,
-		github1: 'https://github.com/RomanFrontEndDeveloper/react-portfolio',
-	},
+
 	{
 		id: 4,
-		title: 'Online Store',
+		title: 'E-commerce Store (Next.js)',
 		imgSrc: portfolio4,
-		category:
-			'Next.js, React.js, Deploy with the Verlel & Netlify, API, server rendering,',
+		category: 'Next.js • React • API • SSR • Responsive UI',
 		description: `https://merry-banoffee-1d616c.netlify.app/`,
 		github1: 'https://github.com/RomanFrontEndDeveloper/next.js-shop-story',
 	},
+
 	{
 		id: 5,
-		title: 'Real Estate Agency Website',
+		title: 'Real Estate Platform (Next.js + TypeScript)',
 		imgSrc: portfolio5,
-		category:
-			'Responsive real estate website using Next.JS 14, TypeScript, and Tailwind CSS, AOS, react-multi-carousel, Deploy with the Verlel & Netlify,',
+		category: 'Next.js • TypeScript • Tailwind CSS • Responsive UI',
 		description: `https://agensymilenium.netlify.app/`,
 		github1: 'https://github.com/RomanFrontEndDeveloper/milenium',
+	},
+
+	{
+		id: 3,
+		title: 'Personal Portfolio (React)',
+		imgSrc: portfolio3,
+		category: 'React • Vite • Animations • Responsive UI',
+		description: `https://portfolio-react-roman-okhremov.netlify.app/`,
+		github1: 'https://github.com/RomanFrontEndDeveloper/react-portfolio',
+	},
+
+	{
+		id: 1,
+		title: 'Travel Landing Page',
+		imgSrc: portfolio1,
+		category: 'HTML • CSS • JavaScript • Responsive UI',
+		description: `https://romanfrontenddeveloper.github.io/trevland/`,
+		github1: 'https://github.com/RomanFrontEndDeveloper/trevland',
 	},
 ];
