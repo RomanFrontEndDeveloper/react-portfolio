@@ -1,26 +1,26 @@
 export const education = [
 	{
-		year: '2023-2024',
-		degree: 'Front End Developer',
-		institution: 'Courses-School Bogdan Stashchuk',
+		year: '2023–2024',
+		degree: 'Frontend Developer',
+		institution: 'Frontend Courses — Bohdan Stashchuk',
 	},
 
 	{
-		year: '2023-2024',
-		degree: 'Front End Developer',
-		institution: 'Courses Ivan Petrichenko',
+		year: '2023–2024',
+		degree: 'Frontend Developer',
+		institution: 'Frontend Courses — Ivan Petrichenko',
 	},
 
 	{
 		year: '2023',
-		degree: 'Front End Developer',
-		institution: 'Courses-School Vitaly Sawchuk',
+		degree: 'Frontend Developer',
+		institution: 'Frontend School — Vitalii Savchuk',
 	},
 
 	{
 		year: '2022',
 		degree: 'Forex Trading',
-		institution: 'Courses-School Roboforex',
+		institution: 'RoboForex Academy',
 	},
 
 	{
