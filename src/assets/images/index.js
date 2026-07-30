@@ -9,6 +9,7 @@ import portfolio2 from './portfolio-2.png';
 import portfolio3 from './portfolio-3.png';
 import portfolio4 from './portfolio-4.png';
 import portfolio5 from './portfolio-5.png';
+import portfolio6 from './portfolio-6.png';
 
 export {
 	mainImg,
@@ -22,4 +23,5 @@ export {
 	portfolio3,
 	portfolio4,
 	portfolio5,
+	portfolio6,
 };

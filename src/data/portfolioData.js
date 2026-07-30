@@ -4,8 +4,20 @@ import {
 	portfolio3,
 	portfolio4,
 	portfolio5,
+	portfolio6,
 } from '../assets/images';
+
 export const portfolioData = [
+	{
+		id: 6,
+		title: 'Fullstack Freelance Marketplace',
+		imgSrc: portfolio6,
+		category:
+			'Next.js • TypeScript • React Query • Node.js • Express • MongoDB • JWT Authentication • Full CRUD',
+		description: `https://roman-freelancehub.vercel.app/`,
+		github1: 'https://github.com/RomanFrontEndDeveloper/frontend',
+	},
+
 	{
 		id: 2,
 		title: 'Fullstack Real Estate Platform (Next.js + TypeScript)',
@@ -25,16 +37,6 @@ export const portfolioData = [
 		description: `https://clienthub-crm.vercel.app/dashboard/tasks`,
 		github1: 'https://github.com/RomanFrontEndDeveloper/clienthub-crm',
 	},
-
-	// {
-	// 	id: 6,
-	// 	title: 'CRM API Integration System',
-	// 	imgSrc: portfolio6,
-	// 	category:
-	// 		'Next.js • TypeScript • REST API • SalesDrive API • Telegram Bot • Validation • Anti-Spam',
-	// 	description: `httpsvercel`,
-	// 	github1: 'https://github.com/RomanFrontEndDeveloper/lead-integration',
-	// },
 
 	{
 		id: 5,
