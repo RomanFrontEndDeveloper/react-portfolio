@@ -66,6 +66,7 @@ const Home = () => {
 						</motion.a>
 					))}
 				</div>
+
 				<div className='home-info'>
 					<motion.h1
 						custom={0}
@@ -95,6 +96,31 @@ const Home = () => {
 						I create stunning websites for your business, with high
 						expertise in web design and development.
 					</motion.p>
+					<motion.div
+						className='cv-buttons'
+						custom={5}
+						variants={slideInVariants('left', 0.8, 180, true)}
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: false, amount: 0.5 }}
+					>
+						<a
+							href='/Frontend_Full-Stack_Developer-CV.pdf'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='cv-btn cv-btn-outline'
+						>
+							View CV
+						</a>
+
+						<a
+							href='/Frontend_Full-Stack_Developer-CV.pdf'
+							download
+							className='cv-btn'
+						>
+							Download CV
+						</a>
+					</motion.div>
 					<motion.a
 						href='#contact'
 						className='home-info-link inner-info-link'
@@ -118,6 +144,7 @@ const Home = () => {
 					<img src={mainImg} alt='mainImg' />
 				</motion.div>
 			</div>
+
 			<a href='#about' className='scroll-down'>
 				Scroll down
 				<FaArrowDownLong />

@@ -1,15 +1,15 @@
 import mainImg from './main-img.png';
 import aboutImg from './about-img.png';
-import client1 from './client1.jpg';
-import client2 from './client2.jpg';
-import client3 from './client3.png';
-import client4 from './client4.jpg';
-import portfolio1 from './portfolio-1.png';
-import portfolio2 from './portfolio-2.png';
+import client1 from './client1.webp';
+import client2 from './client2.webp';
+import client3 from './client3.webp';
+import client4 from './client4.webp';
+import portfolio1 from './portfolio-1.webp';
+import portfolio2 from './portfolio-2.webp';
 import portfolio3 from './portfolio-3.png';
-import portfolio4 from './portfolio-4.png';
+import portfolio4 from './portfolio-4.webp';
 import portfolio5 from './portfolio-5.png';
-import portfolio6 from './portfolio-6.png';
+import portfolio6 from './portfolio-6.webp';
 
 export {
 	mainImg,

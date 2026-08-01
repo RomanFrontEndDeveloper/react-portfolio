@@ -36,6 +36,11 @@
 	color: var(--hover-color);
 }
 
+.home-info {
+	display: flex;
+	flex-direction: column;
+}
+
 .home-info h1 {
 	font-size: 60px;
 	font-weight: 600;
@@ -54,6 +59,10 @@
 	color: var(--third-color);
 	max-width: 350px;
 	width: 100%;
+}
+
+.home-info-link {
+	align-self: center;
 }
 
 @media (max-width: 991px) {
@@ -112,8 +121,185 @@
 	background: var(--hover-color);
 }
 
+/* ===== CV Buttons ===== */
+
+.cv-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.cv-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-width: 170px;
+	height: 56px;
+	width: 200px;
+	padding: 0 25px;
+
+	background: var(--second-color);
+	color: #fff;
+
+	font-size: 16px;
+	font-weight: 500;
+
+	border-radius: 10px;
+	border: 2px solid var(--second-color);
+
+	transition: 0.3s;
+}
+
+.cv-btn:hover {
+	background: var(--hover-color);
+	border-color: var(--hover-color);
+	color: #fff;
+}
+
+.cv-btn-outline {
+	background: transparent;
+	color: var(--second-color);
+}
+
+.cv-btn-outline:hover {
+	background: var(--second-color);
+	color: #fff;
+}
+
+@media (max-width: 991px) {
+	.cv-buttons {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 767px) {
+	@media (max-width: 767px) {
+		.home {
+			padding: 110px 0 40px;
+		}
+
+		.home-wrapper {
+			flex-direction: column;
+			gap: 30px;
+			text-align: center;
+		}
+
+		.media-icons {
+			flex-direction: row;
+			justify-content: center;
+			gap: 18px;
+			margin: 0;
+		}
+
+		.media-icons a {
+			font-size: 30px;
+		}
+
+		.home-info {
+			width: 100%;
+		}
+
+		.home-info h1 {
+			font-size: 48px;
+			line-height: 1.15;
+		}
+
+		.home-info h3 {
+			font-size: 28px;
+			line-height: 1.4;
+			margin-top: 10px;
+		}
+
+		.home-info p {
+			max-width: 330px;
+			margin: 15px auto 0;
+			font-size: 18px;
+			line-height: 1.6;
+		}
+
+		.cv-buttons {
+			margin-top: 25px;
+			flex-direction: column;
+			align-items: center;
+			gap: 14px;
+		}
+
+		.cv-btn {
+			width: 260px;
+			height: 54px;
+			font-size: 17px;
+		}
+
+		.home-info-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 200px;
+			height: 56px;
+
+			margin: 25px auto 0;
+			padding: 0;
+		}
+
+		.home-img {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.home-img img {
+			width: 92%;
+			max-width: 360px;
+			border-radius: 14px;
+		}
+
+		.scroll-down {
+			margin-top: 25px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.home-info h1 {
+			font-size: 40px;
+		}
+
+		.home-info h3 {
+			font-size: 22px;
+		}
+
+		.home-info p {
+			font-size: 16px;
+			max-width: 290px;
+		}
+
+		.cv-btn,
+		.home-info-link {
+			width: 240px;
+		}
+
+		.home-img img {
+			width: 90%;
+		}
+	}
+
+	.cv-buttons {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.cv-btn {
+		width: 200px;
+	}
+}
+
 .home-img img {
-	width: 90%;
+	width: 70%;
 }
 
 .scroll-down {
