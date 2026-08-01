@@ -14,6 +14,7 @@ const About = () => {
 				<SectionTitle title='About me' subtitle='About me' />
 				<div className='about-wrapper'>
 					<motion.div
+						className='about-img'
 						variants={slideInVariants('left', 0.9, 100, true)}
 						initial='hidden'
 						whileInView='visible'
@@ -29,7 +30,7 @@ const About = () => {
 									'right',
 									0.5,
 									50,
-									true
+									true,
 								)}
 								initial='hidden'
 								whileInView='visible'
@@ -43,13 +44,13 @@ const About = () => {
 									'left',
 									0.5,
 									100,
-									true
+									true,
 								)}
 								initial='hidden'
 								whileInView='visible'
 								viewport={{ once: false, amount: 0.5 }}
 							>
-								A Lead <span> Front-End Developer </span>
+								Frontend & Full Stack <span> Developer </span>
 								<span id='dark-span'> based in </span>
 								<span> Ukraine </span>
 							</motion.h4>
@@ -59,18 +60,18 @@ const About = () => {
 									'right',
 									0.5,
 									100,
-									true
+									true,
 								)}
 								initial='hidden'
 								whileInView='visible'
 								viewport={{ once: false, amount: 0.5 }}
 							>
-								I design and develop services for customers
-								specializing in creating stylish, modern
-								websites, web services, and online stores. My
-								passion is to design digital user experiences
-								through meaningful interactions. Check out my
-								Portfolio.
+								I build modern, responsive, and scalable web
+								applications using React, Next.js, TypeScript,
+								Node.js, Express, and MongoDB. I enjoy creating
+								clean user interfaces, writing maintainable
+								code, and developing applications that deliver
+								great user experiences.
 							</motion.p>
 						</div>
 						<ul className='proffesional-list'>
@@ -83,7 +84,7 @@ const About = () => {
 										'right',
 										0.5,
 										50,
-										true
+										true,
 									)}
 									initial='hidden'
 									whileInView='visible'

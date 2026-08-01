@@ -22,9 +22,10 @@ const SkillsInfo = () => {
 					>
 						<h3>Edukation & Skills</h3>
 						<p>
-							For more than 2 years our I have been accomplishing
-							enough with modern Web Development, new generation
-							web and app programming language.
+							With over 2 years of experience in web development,
+							I specialize in building responsive, user-friendly,
+							and scalable applications using modern technologies
+							and best practices.
 						</p>
 					</motion.div>
 					<div className='skills-info education-all'>

@@ -4,26 +4,26 @@ export const workexperience = [
 		employmentType: 'Personal Projects',
 		period: '2023 – Present',
 		company: 'Self-Employed',
-		description: `Developed multiple personal projects using HTML, CSS, JavaScript, React, and TypeScript.
-Built responsive and user-friendly interfaces with clean, maintainable code.
-Deployed applications using Vercel and Netlify, and managed code with Git and GitHub.`,
+		description: `Developed modern web applications using React, Next.js, TypeScript, JavaScript, HTML, and CSS.
+Built responsive, accessible, and user-friendly interfaces with reusable components and clean architecture.
+Deployed projects on Vercel and Netlify while managing source code with Git and GitHub.`,
 	},
 	{
-		title: 'Junior Frontend Developer',
-		employmentType: 'Course Practice',
-		period: '2024 – 2025',
-		company: 'Training Projects',
-		description: `Completed individual and team-based projects, including landing pages and SPA applications.
-Worked with React, TypeScript, REST APIs, and responsive design.
-Collaborated using Git, GitHub, and basic Agile workflows.`,
-	},
-	{
-		title: 'Frontend Developer (Freelance)',
-		employmentType: 'Freelance & Volunteer',
+		title: 'Full Stack Developer',
+		employmentType: 'Personal Projects',
 		period: '2025 – Present',
-		company: 'Independent Projects',
-		description: `Built small websites and UI components for personal use and local clients.
-Integrated REST APIs and handled data fetching in frontend applications.
-Used modern tools such as Vite, CRA, and Next.js for development and deployment.`,
+		company: 'Self-Employed',
+		description: `Expanded frontend applications with Node.js, Express.js, MongoDB, and REST APIs.
+Implemented authentication, CRUD functionality, form validation, and backend integration.
+Focused on scalable application architecture, performance optimization, and maintainable code.`,
+	},
+	{
+		title: 'Continuous Learning',
+		employmentType: 'Professional Development',
+		period: '2023 – Present',
+		company: 'Self-Learning',
+		description: `Continuously improving my skills through real-world projects, technical documentation, and modern development practices.
+Working with React, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Node.js, Express.js, MongoDB, Git, and deployment platforms.
+Building production-ready applications while following clean code principles and responsive design standards.`,
 	},
 ];

@@ -66,7 +66,6 @@ const Home = () => {
 						</motion.a>
 					))}
 				</div>
-
 				<div className='home-info'>
 					<motion.h1
 						custom={0}
@@ -77,6 +76,7 @@ const Home = () => {
 					>
 						Hello I'm Roman
 					</motion.h1>
+
 					<motion.h3
 						custom={1}
 						variants={slideInVariants('left', 0.7, 140, true)}
@@ -84,8 +84,9 @@ const Home = () => {
 						whileInView='visible'
 						viewport={{ once: false, amount: 0.5 }}
 					>
-						I'm Front-end Developer
+						Frontend & Full Stack Developer
 					</motion.h3>
+
 					<motion.p
 						custom={2}
 						variants={slideInVariants('left', 0.9, -100, true)}
@@ -93,9 +94,12 @@ const Home = () => {
 						whileInView='visible'
 						viewport={{ once: false, amount: 0.5 }}
 					>
-						I create stunning websites for your business, with high
-						expertise in web design and development.
+						I create modern web applications using React, Next.js,
+						TypeScript, Node.js, Express, and MongoDB. I enjoy
+						solving real-world problems with clean, maintainable
+						code and intuitive user interfaces.
 					</motion.p>
+
 					<motion.div
 						className='cv-buttons'
 						custom={5}
@@ -120,20 +124,14 @@ const Home = () => {
 						>
 							Download CV
 						</a>
+
+						<a href='#contact' className='cv-btn'>
+							Contact me
+							<FaArrowCircleRight />
+						</a>
 					</motion.div>
-					<motion.a
-						href='#contact'
-						className='home-info-link inner-info-link'
-						custom={4}
-						variants={slideInVariants('left', 0.6, 160, true)}
-						initial='hidden'
-						whileInView='visible'
-						viewport={{ once: false, amount: 0.5 }}
-					>
-						Contact me
-						<FaArrowCircleRight />
-					</motion.a>
 				</div>
+
 				<motion.div
 					className='home-img'
 					variants={slideInVariants('left', 0.6, -160, true)}

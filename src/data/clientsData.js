@@ -4,29 +4,33 @@ export const clientData = [
 	{
 		id: 1,
 		imgSrc: client1,
-		description: `Hello, my name is Maria Ivanenko, I am a realtor. Thank you Roman for developing	the business card website, it is very	fast and high quality.`,
+		description:
+			'Roman created a modern and professional website for my real estate business. The project was completed on time, and the website is fast, responsive, and easy for clients to use. I highly recommend his work.',
 		name: 'Marina Ivanenko',
-		position: 'Astate Agent',
+		position: 'Real Estate Agent',
 	},
 	{
 		id: 2,
 		imgSrc: client2,
-		description: `Hi, I'm Igor Lew. Thank you for	developing a business card website for a car wash.`,
-		name: 'Jgor Lew',
-		position: 'Director of the Car Wash',
+		description:
+			'Working with Roman was a great experience. He developed a clean and responsive website for our car wash business that looks great on every device and helps us attract new customers.',
+		name: 'Igor Lev',
+		position: 'Car Wash Owner',
 	},
 	{
 		id: 3,
 		imgSrc: client3,
-		description: `Hi, I'm Iwanna Pawluk and I am a designer & developer who creates modern,	user-friendly digital experiences. I	strive to make the world a better place	through innovative and accessible	products.`,
-		name: 'Iwanna Pawluk',
+		description:
+			'Roman pays close attention to design details and user experience. Communication was excellent throughout the project, and the final result exceeded my expectations.',
+		name: 'Ivanna Pavluk',
 		position: 'Marketing Manager',
 	},
 	{
 		id: 4,
 		imgSrc: client4,
-		description: `Hello, my name is Andriy. Thank you	Roman for developing the website for our	real estate agency and also for	developing three business cards for our	realtors.`,
-		name: 'Andrew Pu',
-		position: 'Direcror Astate Agensy',
+		description:
+			'Roman developed a modern website for our real estate agency and several landing pages for our agents. The project was delivered professionally, and we are very satisfied with the final result.',
+		name: 'Andriy P.',
+		position: 'Director, Real Estate Agency',
 	},
 ];

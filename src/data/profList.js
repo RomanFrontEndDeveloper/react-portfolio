@@ -2,16 +2,16 @@ export const profList = [
 	{
 		id: 1,
 		number: '2+',
-		text: 'Years of Experience',
+		text: 'Years of Professional Experience',
 	},
 	{
 		id: 2,
-		number: '100+',
-		text: 'Happy Customers',
+		number: '15+',
+		text: 'Completed Web Projects',
 	},
 	{
 		id: 3,
-		number: '5+',
-		text: 'Successful Projects',
+		number: '20+',
+		text: 'Technologies Mastered',
 	},
 ];

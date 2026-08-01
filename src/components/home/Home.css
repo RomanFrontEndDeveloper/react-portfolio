@@ -1,9 +1,7 @@
-.home {
-	padding: 80px 0;
-	min-height: 100vh;
-}
+/* ===========================
+   Home Section
+=========================== */
 
-/* home secrion  */
 .home {
 	padding: 80px 0;
 	min-height: 100vh;
@@ -11,154 +9,158 @@
 
 .home-wrapper {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 10px;
+	justify-content: space-between;
+	gap: 40px;
 }
+
+/* ===========================
+   Social
+=========================== */
 
 .media-icons {
 	display: flex;
 	flex-direction: column;
-	margin-left: 30px;
-	margin-right: 40px;
+	margin: 0 40px 0 30px;
 }
 
 .media-icons a {
 	color: var(--second-color);
 	font-size: 32px;
+	transition: 0.3s;
 }
 
 .media-icons a:hover {
 	color: var(--hover-color);
 }
 
+/* ===========================
+   Text
+=========================== */
+
 .home-info {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
+	align-items: center; /* центрує всі дочірні елементи */
+	text-align: center; /* центрує текст */
 }
 
 .home-info h1 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 600;
 	line-height: 1.2;
 }
 
 .home-info h3 {
-	color: var(--third-color);
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 2;
+	color: var(--third-color);
 }
 
 .home-info p {
-	font-size: var(--normal-font-size);
-	color: var(--third-color);
-	max-width: 350px;
+	max-width: 420px;
 	width: 100%;
+	color: var(--third-color);
+	font-size: var(--normal-font-size);
+	line-height: 1.7;
+	margin: 0 auto;
 }
 
-.home-info-link {
-	align-self: center;
+/* ===========================
+   Home Image (Desktop)
+=========================== */
+
+.home-img {
+	flex: 0 0 42%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (max-width: 991px) {
-	.home-info p {
-		margin: 0 auto;
-	}
-
-	.media-icons {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.media-icons svg {
-		margin: 15px;
-	}
+.home-img img {
+	display: block;
+	width: 100%;
+	max-width: 470px; /* приблизно на 15% менше */
+	height: auto;
+	border-radius: 20px;
+	object-fit: cover;
 }
 
-@media (max-width: 991px) {
-	.media-icons {
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
-
-.home-info-link {
-	width: 188px;
-	gap: 4px;
-}
-
-.home-info-link svg {
-	position: relative;
-	left: 7px;
-	top: 3px;
-	/* border-radius: 50%; */
-	color: #fff;
-	font-size: 17px;
-}
+/* ===========================
+   Buttons
+=========================== */
 
 .inner-info-link {
-	background: var(--second-color);
-	color: #fff;
-	font-size: var(--normal-font-size);
-	font-weight: 500;
 	display: inline-block;
 	margin-top: 25px;
 	padding: 20px 30px;
+
+	background: var(--second-color);
+	color: #fff;
+
+	font-size: var(--normal-font-size);
+	font-weight: 500;
 	letter-spacing: 1px;
+
 	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+
+	transition: 0.3s;
 }
 
 .inner-info-link:hover {
 	background: var(--hover-color);
 }
-
-/* ===== CV Buttons ===== */
+/* ===========================
+   CV Buttons
+=========================== */
 
 .cv-buttons {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	gap: 15px;
-	margin-top: 20px;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 28px;
+	width: 100%;
 }
 
 .cv-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
 
-	min-width: 170px;
+	width: 260px;
 	height: 56px;
-	width: 200px;
-	padding: 0 25px;
-
-	background: var(--second-color);
-	color: #fff;
 
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
+	text-decoration: none;
 
-	border-radius: 10px;
+	border-radius: 14px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.cv-btn {
+	background: var(--second-color);
+	color: #fff;
 	border: 2px solid var(--second-color);
-
-	transition: 0.3s;
 }
 
 .cv-btn:hover {
 	background: var(--hover-color);
 	border-color: var(--hover-color);
 	color: #fff;
+	transform: translateY(-2px);
 }
 
 .cv-btn-outline {
 	background: transparent;
 	color: var(--second-color);
+	border: 2px solid var(--second-color);
 }
 
 .cv-btn-outline:hover {
@@ -166,120 +168,22 @@
 	color: #fff;
 }
 
-@media (max-width: 991px) {
-	.cv-buttons {
-		justify-content: center;
-	}
-}
-
-@media (max-width: 767px) {
-	.home {
-		padding: 90px 0 25px;
-		min-height: auto;
-	}
-
-	.home-wrapper {
-		flex-direction: column;
-		gap: 18px;
-		text-align: center;
-	}
-
-	/* ---------- Social ---------- */
-
-	.media-icons {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 14px;
-		margin: 0;
-		flex-wrap: nowrap;
-	}
-
-	.media-icons a {
-		font-size: 22px;
-	}
-
-	.media-icons svg {
-		margin: 0;
-	}
-
-	/* ---------- Text ---------- */
-
-	.home-info {
-		width: 100%;
-		align-items: center;
-	}
-
-	.home-info h1 {
-		font-size: 34px;
-		line-height: 1.15;
-		margin-bottom: 8px;
-	}
-
-	.home-info h3 {
-		font-size: 18px;
-		line-height: 1.3;
-		margin-bottom: 10px;
-	}
-
-	.home-info p {
-		max-width: 300px;
-		font-size: 15px;
-		line-height: 1.55;
-		margin: 0 auto;
-	}
-
-	/* ---------- CV ---------- */
-
-	.cv-buttons {
-		margin-top: 18px;
-		gap: 10px;
-	}
-
-	.cv-btn {
-		width: 220px;
-		height: 46px;
-		font-size: 15px;
-	}
-
-	.home-info-link {
-		width: 220px;
-		height: 46px;
-		margin-top: 18px;
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	/* ---------- Image ---------- */
-
-	.home-img {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.home-img img {
-		width: 70%;
-		max-width: 220px;
-	}
-
-	.scroll-down {
-		margin-top: 18px;
-		font-size: 14px;
-	}
-}
+/* ===========================
+   Scroll Down
+=========================== */
 
 .scroll-down {
 	display: block;
-	text-align: center;
-	color: var(--first-color);
-	margin: 20px auto 0;
 	width: 120px;
+	margin: 20px auto 0;
+
+	text-align: center;
+
+	color: var(--first-color);
 	font-size: var(--normal-font-size);
 	font-weight: 500;
 }
+
 .scroll-down svg {
 	position: relative;
 	margin-left: 5px;
@@ -288,30 +192,122 @@
 
 .scroll-down i {
 	position: relative;
-	color: var(--second-color);
-	font-size: 18px;
-	animation: arrowdown ease 2s infinite;
-	-webkit-animation: arrowdown ease 2s infinite;
-	top: -5px;
 	left: 10px;
+	top: -5px;
+
+	font-size: 18px;
+	color: var(--second-color);
+
+	animation: arrowdown 2s ease infinite;
 }
 
 @keyframes arrowdown {
 	0% {
 		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		-moz-transform: translateY(0);
-		-ms-transform: translateY(0);
-		-o-transform: translateY(0);
 	}
+
 	30% {
 		transform: translateY(20px);
-		-webkit-transform: translateY(20px);
-		-moz-transform: translateY(20px);
-		-ms-transform: translateY(20px);
-		-o-transform: translateY(20px);
 	}
 }
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 991px) {
+	.home-wrapper {
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.media-icons {
+		flex-direction: row;
+		margin: 0;
+		gap: 20px;
+	}
+
+	.home-info {
+		align-items: center;
+	}
+
+	.home-info p {
+		margin: 0 auto;
+	}
+
+	.home-img {
+		flex: none;
+		width: 100%;
+	}
+
+	.home-img img {
+		max-width: 340px;
+		border-radius: 18px;
+	}
+
+	.cv-buttons {
+		justify-content: center;
+	}
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 767px) {
+	.home {
+		padding: 90px 0 25px;
+		min-height: auto;
+	}
+
+	.home-wrapper {
+		gap: 20px;
+	}
+
+	.media-icons {
+		gap: 14px;
+	}
+
+	.media-icons a {
+		font-size: 22px;
+	}
+
+	.home-info h1 {
+		font-size: 34px;
+	}
+
+	.home-info h3 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+
+	.home-info p {
+		max-width: 300px;
+		font-size: 15px;
+		line-height: 1.6;
+	}
+
+	.cv-btn {
+		width: 240px;
+		height: 50px;
+		font-size: 15px;
+	}
+
+	.home-img img {
+		max-width: 260px;
+		border-radius: 18px;
+	}
+
+	.scroll-down {
+		font-size: 14px;
+	}
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
 @media (max-width: 430px) {
 	.media-icons {
 		gap: 10px;
@@ -330,26 +326,18 @@
 	}
 
 	.home-info p {
-		font-size: 14px;
 		max-width: 280px;
+		font-size: 14px;
 	}
 
-	.cv-btn,
-	.home-info-link {
+	.cv-btn {
 		width: 200px;
 		height: 44px;
 		font-size: 14px;
 	}
-	.home-img {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
 
 	.home-img img {
-		width: min(92vw, 340px);
-		height: auto;
-		border-radius: 12px;
+		max-width: 220px;
+		border-radius: 16px;
 	}
-	/* end Home section    */
 }
