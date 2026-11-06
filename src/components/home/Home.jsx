@@ -108,7 +108,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
           >
             <a
-              href="/1_Roman_Okhremov__CV.pdf"
+              href="/Roman_Okhremov_CV_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="cv-btn cv-btn-outline"
@@ -116,7 +116,7 @@ const Home = () => {
               View CV
             </a>
 
-            <a href="/1_Roman_Okhremov__CV.pdf" download className="cv-btn">
+            <a href="/Roman_Okhremov_CV_2026.pdf" download className="cv-btn">
               Download CV
             </a>
 
