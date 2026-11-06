@@ -5,65 +5,65 @@ import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const ServiceItem = ({ services }) => {
-	const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);
 
-	const openModal = (index) => {
-		setActiveIndex(index);
-	};
+    const openModal = (index) => {
+        setActiveIndex(index);
+    };
 
-	const closeModal = () => {
-		setActiveIndex(null);
-	};
+    const closeModal = () => {
+        setActiveIndex(null);
+    };
 
-	useEffect(() => {
-		if (activeIndex !== null) {
-			document.body.style.overflow = 'hidden';
-			document.documentElement.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = '';
-			document.documentElement.style.overflow = '';
-		}
+    useEffect(() => {
+        if (activeIndex !== null) {
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+        }
 
-		return () => {
-			document.body.style.overflow = '';
-			document.documentElement.style.overflow = '';
-		};
-	}, [activeIndex]);
+        return () => {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+        };
+    }, [activeIndex]);
 
-	return (
-		<>
-			{services.map((item, index) => (
-				<motion.li
-					className='services-container'
-					key={index}
-					custom={index}
-					variants={slideInVariants('top', 0.6, 50, true)}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: false, amount: 0.5 }}
-				>
-					<div className='service-card'>
-						<item.icon className='services-icon' />
-						<h3>{item.title}</h3>
+    return (
+        <>
+            {services.map((item, index) => (
+                <Motion.li
+                    className='services-container'
+                    key={index}
+                    custom={index}
+                    variants={slideInVariants('top', 0.6, 50, true)}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: false, amount: 0.5 }}
+                >
+                    <div className='service-card'>
+                        <item.icon className='services-icon' />
+                        <h3>{item.title}</h3>
 
-						<div
-							className='learn-more-btn'
-							onClick={() => openModal(index)}
-						>
-							Learn More
-							<FaLongArrowAltRight className='learn-more-icon' />
-						</div>
-					</div>
+                        <div
+                            className='learn-more-btn'
+                            onClick={() => openModal(index)}
+                        >
+                            Learn More
+                            <FaLongArrowAltRight className='learn-more-icon' />
+                        </div>
+                    </div>
 
-					<ServiceModal
-						item={item}
-						closeModal={closeModal}
-						isActive={activeIndex === index}
-					/>
-				</motion.li>
-			))}
-		</>
-	);
+                    <ServiceModal
+                        item={item}
+                        closeModal={closeModal}
+                        isActive={activeIndex === index}
+                    />
+                </Motion.li>
+            ))}
+        </>
+    );
 };
 
 export default ServiceItem;

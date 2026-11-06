@@ -7,7 +7,7 @@ import { slideInVariants } from '../../utils/animation';
 const ContactRight = () => {
 	return (
 		<div className='contacr-right'>
-			<motion.p
+			<Motion.p
 				custom={2}
 				variants={slideInVariants('right', 0.6, 150, false)}
 				initial='hidden'
@@ -16,7 +16,7 @@ const ContactRight = () => {
 			>
 				I'm always open to discussing product
 				<span>design work or partnerships.</span>
-			</motion.p>
+			</Motion.p>
 			<div className='forms'>
 				<ContactFormR />
 				<ContactForm />

@@ -48,7 +48,7 @@ const Home = () => {
       <div className="container home-wrapper">
         <div className="media-icons">
           {icons.map((item, index) => (
-            <motion.a
+            <Motion.a
               href={item.href}
               target="_blank"
               key={item.id}
@@ -59,11 +59,11 @@ const Home = () => {
               viewport={{ once: false, amount: 0.5 }}
             >
               {item.icon}
-            </motion.a>
+            </Motion.a>
           ))}
         </div>
         <div className="home-info">
-          <motion.h1
+          <Motion.h1
             custom={0}
             variants={slideInVariants("left", 0.5, 100, true)}
             initial="hidden"
@@ -71,9 +71,9 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
           >
             Hello I'm Roman
-          </motion.h1>
+          </Motion.h1>
 
-          <motion.h3
+          <Motion.h3
             custom={1}
             variants={slideInVariants("left", 0.7, 140, true)}
             initial="hidden"
@@ -81,9 +81,9 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
           >
             Frontend & Full Stack Developer
-          </motion.h3>
+          </Motion.h3>
 
-          <motion.p
+          <Motion.p
             custom={2}
             variants={slideInVariants("left", 0.9, -100, true)}
             initial="hidden"
@@ -93,9 +93,9 @@ const Home = () => {
             I create modern web applications using React, Next.js, TypeScript,
             Node.js, Express, and MongoDB. I enjoy solving real-world problems
             with clean, maintainable code and intuitive user interfaces.
-          </motion.p>
+          </Motion.p>
 
-          <motion.div
+          <Motion.div
             className="cv-buttons"
             custom={5}
             variants={slideInVariants("left", 0.8, 180, true)}
@@ -120,10 +120,10 @@ const Home = () => {
               Contact me
               <FaArrowCircleRight />
             </a>
-          </motion.div>
+          </Motion.div>
         </div>
 
-        <motion.div
+        <Motion.div
           className="home-img"
           variants={slideInVariants("left", 0.6, -160, true)}
           initial="hidden"
@@ -131,7 +131,7 @@ const Home = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <img src={mainImg} alt="mainImg" />
-        </motion.div>
+        </Motion.div>
       </div>
 
       <a href="#about" className="scroll-down">
