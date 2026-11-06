@@ -3,7 +3,7 @@ import './About.css';
 import { aboutImg } from '../../assets/images';
 import { FaDownload } from 'react-icons/fa';
 import SectionTitle from '../sectionTitle/SectionTitle';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 import { profList } from '../../data/profList';
 

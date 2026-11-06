@@ -1,7 +1,7 @@
 import React from 'react';
 import './GetInTouch.css';
 import { FaPaperPlane } from 'react-icons/fa';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const GetInTouch = () => {

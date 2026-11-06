@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ServiceModal from './ServiceModal';
 import { FaLongArrowAltRight } from 'react-icons/fa';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const ServiceItem = ({ services }) => {

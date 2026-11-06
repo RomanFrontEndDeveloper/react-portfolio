@@ -3,7 +3,7 @@ import './Services.css';
 import SectionTitle from '../sectionTitle/SectionTitle';
 import ServiceItem from './ServiceItem';
 import { services } from '../../data/services';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const Services = () => {

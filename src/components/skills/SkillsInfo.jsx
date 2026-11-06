@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import SectionTitle from '../sectionTitle/SectionTitle';
 import Education from './Education';
 import Skills from './Skills';

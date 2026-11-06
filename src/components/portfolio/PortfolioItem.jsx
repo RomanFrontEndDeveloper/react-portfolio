@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioModal from './PortfolioModal';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const PortfolioItem = ({ item, index }) => {

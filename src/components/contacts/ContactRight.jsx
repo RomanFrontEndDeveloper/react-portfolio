@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import ContactFormR from './ContactFormR';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const ContactRight = () => {

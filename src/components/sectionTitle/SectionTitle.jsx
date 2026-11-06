@@ -1,6 +1,6 @@
 import './SectionTitle.css';
 import { titleVariants, subTitleVariants } from '../../utils/animation';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'motion/react';
 
 const SectionTitle = ({ title, subtitle }) => {
 	return (

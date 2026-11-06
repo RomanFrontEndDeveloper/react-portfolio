@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPaperPlane } from 'react-icons/fa6';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 export default function ContactFormR() {

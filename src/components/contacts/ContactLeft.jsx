@@ -1,6 +1,6 @@
 import React from 'react';
 import { contactData } from '../../data/contactData';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const ContactLeft = () => {

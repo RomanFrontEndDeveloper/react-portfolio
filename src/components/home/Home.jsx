@@ -9,13 +9,9 @@ import {
 } from "react-icons/fa";
 import { mainImg } from "../../assets/images";
 import { FaArrowDownLong } from "react-icons/fa6";
-import { motion } from "motion/react";
-import {
-  iconVariants,
-  motionVariants,
-  imgVariants,
-  slideInVariants,
-} from "../../utils/animation";
+import { motion as Motion } from "motion/react";
+
+import { iconVariants, slideInVariants } from "../../utils/animation";
 
 const icons = [
   {

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import emailjs from '@emailjs/browser';
 import { slideInVariants } from '../../utils/animation';
 

@@ -1,5 +1,5 @@
 import { workexperience } from '../../data/workexperience';
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { slideInVariants } from '../../utils/animation';
 
 const WorkExperience = () => {
